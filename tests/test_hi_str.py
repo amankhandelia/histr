@@ -1,5 +1,5 @@
 from typing import List
-from histr import Shabdansh
+from src.histr import Shabdansh
 import pytest
 
 
