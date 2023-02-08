@@ -8,7 +8,7 @@ with open("README.md") as f:
 if __name__ == "__main__":
     setup(
         name="histr",
-        version="0.1.0",
+        version="0.0.1",
         description="One stop solution for text preprocessing on devanagari text",
         long_description=long_description,
         long_description_content_type="text/markdown",
@@ -16,7 +16,9 @@ if __name__ == "__main__":
         author_email="opensourceaman@gmail.com",
         url="https://github.com/amankhandelia/histr",
         license="MIT License",
-        packages=find_packages(),
+        # packages=find_packages(where="./src", exclude=("./tests",)),
+        py_modules=["histr"],
+        package_dir={"": "src"},
         include_package_data=True,
         python_requires=">3.5",
     )
