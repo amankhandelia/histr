@@ -16,7 +16,6 @@ if __name__ == "__main__":
         author_email="opensourceaman@gmail.com",
         url="https://github.com/amankhandelia/histr",
         license="MIT License",
-        # packages=find_packages(where="./src", exclude=("./tests",)),
         py_modules=["histr"],
         package_dir={"": "src"},
         include_package_data=True,
